@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!--
+This page looks quite confusing. 
+It would be much better to use semantic HTML to structure this code. 
+Let’s fix this mess!
+(Hints are provided below some elements to help you out.)
+-->
+
+<html lang="en">
+  <head>
+    <title>HTML Basics Excercise</title>
+    <meta charset="UTF-8" />
+  </head>
+  <!-- Someone forgot to wrap the content of our webpage with an HTML element,
+	which one was it again? BODY-->
+  <body>
+    <header>
+       <nav>
+         <h2>Jane Doe</h2>
+         <!-- Which elements could be used to link to parts of the webpage,
+		          which appear below? -->
+         <a id="nav">
+           <ul>
+              <li>About Me</li>
+              <li>Contact</li>
+              <li>Skillset</li>
+           </ul>
+          </a>
+        </nav>
+    </header>
+    <!-- Looks like the following part is the central content of our webpage. -->
+    <main>
+      <section id="about-me">
+        <h1>About me</h1>
+        <p>
+          Hi there! Welcome to my personal website. Here is gathered the most
+          important information about me. If you want to work with me or get to
+          know me, please don't hesitate to get in contact.
+        </p>
+        <!-- What element could be used to combine an image with a descriptive caption? -->
+        <article>
+          <img
+            src="https://unsplash.com/photos/a-group-of-fruit-sitting-on-top-of-a-table-8JkV3L92qb4"
+            alt="fruit"
+          />
+          <p>
+            A random fruit, because I would like to maintain my privacy and
+            let my code speak for me, instead of images.
+          </p>
+        </article>
+      </section>
+
+      <div id="contact">
+        <div>Contact</div>
+        <!-- When clicking on these element, nothing happens! But I want to be redirected to the other websites. Why is it not working? -->
+        <div href="https://github.com">GitHub</div>
+        <div href="https://de.linkedin.com/">LinkedIn</div>
+        <div href="https://codesandbox.io/">CodeSandbox</div>
+      </div>
+
+      <div id="skills">
+        <div>Skillset</div>
+        <!-- This part could use some bulletpoint to be more structured. -->
+        <div>
+          <div>HTML</div>
+          <div>CSS</div>
+          <div>JavaScript</div>
+          <div>React</div>
+          <div>Painting rainbows</div>
+          <div>Party</div>
+        </div>
+      </div>
+    </main>
+  </div>
+  </body>
+</html>
